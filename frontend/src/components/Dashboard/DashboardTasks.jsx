@@ -107,12 +107,12 @@ export default function DashboardTasks({ tasks, updateTask }) {
       ) : (
         <div className="text-sm text-muted text-center py-6">
           No tasks for today.
-          <span
-            className="block mt-2 text-primary hover:underline cursor-pointer"
+          <button
+            className="mt-3 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 active:scale-95 transition-all duration-150 cursor-pointer"
             onClick={() => navigate("/tasks")}
           >
-            Add your first task →
-          </span>
+            + Add your first task
+          </button>
         </div>
       )}
     </div>
